@@ -11,7 +11,7 @@ class CSVLoader:
         self.__sales_path = f"{os.path.abspath('input_data')}/" + sales_path
         self.__store_path = f"{os.path.abspath('input_data')}/" + store_path
 
-        self.__logger = CustomLogger(logger_name="DbReader").logger
+        self.__logger = CustomLogger(logger_name="CSVLoader").logger
 
     def load_data(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         try:
