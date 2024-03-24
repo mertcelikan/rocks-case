@@ -21,7 +21,7 @@ class DataFrameAnalyzer:
         self.__store_df = store_df
         self.__params = params
 
-        self.__logger = CustomLogger(logger_name="DbReader").logger
+        self.__logger = CustomLogger(logger_name="DataFrameAnalyzer").logger
 
     def __filter_and_merge(self) -> DataFrame:
         try:
